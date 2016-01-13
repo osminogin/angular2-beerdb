@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title></title>
+
+    <script src="/node_modules/angular2/bundles/angular2-polyfills.js"></script>
+    <script src="/node_modules/systemjs/dist/system.src.js"></script>
+    <script src="/node_modules/rxjs/bundles/Rx.js"></script>
+    <script src="/node_modules/angular2/bundles/angular2.dev.js"></script>
+    <script src="/node_modules/angular2/bundles/router.dev.js"></script>
+
+    <script>
+        System.config({
+            packages: {
+                app: {
+                    format: 'register',
+                    defaultExtension: 'js'
+                }
+            }
+        });
+        System.import('app/boot')
+                .then(null, console.error.bind(console));
+    </script>
+
+    <link href="/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/node_modules/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <app>Loading...</app>
+
+</body>
+</html>
