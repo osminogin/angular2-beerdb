@@ -3,6 +3,7 @@ import { ROUTER_DIRECTIVES, RouteConfig } from 'angular2/router';
 
 import { HomeComponent }    from './home';
 import { BeerComponent }    from './beer';
+import { BrandComponent }   from './brand';
 import { BreweryComponent } from './brewery';
 
 @Component({
@@ -12,6 +13,7 @@ import { BreweryComponent } from './brewery';
             <ul>
                 <li><a [routerLink]="['/Home']">Home</a></li>
                 <li><a [routerLink]="['/Beer']">Beers</a></li>
+                <li><a [routerLink]="['/Brand']">Brands</a></li>
                 <li><a [routerLink]="['/Brewery']">Breweries</a></li>
             </ul>
         </nav>
@@ -25,6 +27,7 @@ import { BreweryComponent } from './brewery';
 @RouteConfig([
     { path: '/home', component: HomeComponent, as: 'Home', useAsDefault: true },
     { path: '/beer', component: BeerComponent, as: 'Beer' },
+    { path: '/brand', component: BrandComponent, as: 'Brand' },
     { path: '/brewery', component: BreweryComponent, as: 'Brewery' }
 ])
 export class AppComponent { }
