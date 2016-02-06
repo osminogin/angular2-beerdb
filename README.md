@@ -22,6 +22,10 @@ Ready to start the application:
 npm start
 ```
 
+## Author
+
+Vladimir Osintsev <oc@co.ru>
+
 ## License
 
-MIT
+This project is licensed under the MIT license. See the [LICENSE](https://github.com/osminogin/angular2-beerdb/blob/master/LICENSE) file for more info.
